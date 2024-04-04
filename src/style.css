@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: grid;
+}
+
+.container .value {
+    height: 100px;
+    grid-column: span 4;
+    border: none;
+    font-size: 18px;
+    text-align: right;
+    padding: 10px;
+    
+}
+
+.container span {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    background: #6a6262;
+    place-items: center;
+    border: 1px solid rgba (0,0,0, 0.1);
+}
+
+.container span:active {
+    background: #cb6032;
+    color: #fff;
+}
+
+.container span.clear {
+    grid-column: span 2;
+    width: 120px;
+    background: #cb6032;
+}
+
+.container span.plus{
+    grid-row: span 2;
+    height: 120px;
+}
+
+.container span.equal {
+    background: #cb6032;
+}
